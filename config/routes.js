@@ -47,14 +47,18 @@ module.exports.routes = {
   // Post
   'GET /api/v1/post/get': { controller: 'Post', action: 'getAll' },
   'GET /api/v1/post/get/:id': { controller: 'Post', action: 'getByID' },
+  'GET /api/v1/post/get/search': {controller: 'Post', action: 'getByQuery'},
   'POST /api/v1/post/create': { controller: 'Post', action: 'create' },
   'PUT /api/v1/post/update/:id': { controller: 'Post', action: 'update' },
   'DELETE /api/v1/post/delete': { controller: 'Post', action: 'delete' },
 
+  //Upload
+  'POST /api/v1/upload/image': { controller: 'Post', action: 'uploadImages' },
+
   // Settings
-  'GET /api/v1/settings/get': { controller: 'Setting', action: 'getAll' },
-  'GET /api/v1/settings/get/:id': { controller: 'Setting', action: 'getByID' },
-  'POST /api/v1/settings/create': { controller: 'Setting', action: 'create' },
-  'PUT /api/v1/settings/update/:id': { controller: 'Setting', action: 'update' },
-  'DELETE /api/v1/settings/delete': { controller: 'Setting', action: 'delete' },
+  // 'GET /api/v1/settings/get': { controller: 'Setting', action: 'getAll' },
+  // 'GET /api/v1/settings/get/:id': { controller: 'Setting', action: 'getByID' },
+  // 'POST /api/v1/settings/create': { controller: 'Setting', action: 'create' },
+  // 'PUT /api/v1/settings/update/:id': { controller: 'Setting', action: 'update' },
+  // 'DELETE /api/v1/settings/delete': { controller: 'Setting', action: 'delete' },
 };

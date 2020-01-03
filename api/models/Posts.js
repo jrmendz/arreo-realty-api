@@ -50,6 +50,10 @@ module.exports = {
       type: 'string',
       allowNull: true
     },
+    image_list: {
+      type: 'string',
+      allowNull: true
+    },
     status: {
       type: 'number',
       defaultsTo: 1
@@ -57,6 +61,18 @@ module.exports = {
     tags: {
       type: 'string',
       allowNull: true
+    },
+    meta_data: {
+      type: 'string',
+      allowNull: true
+    },
+    type: {
+      type: 'string',
+      allowNull: true
+    },
+    is_forsale: {
+      type: 'number',
+      defaultsTo: 1
     },
     posted_at: {
       type: 'string',
